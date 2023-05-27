@@ -14,6 +14,11 @@
 ```sh
     ng g c [nameModule]/[nameComponent] --module=client 
 ```
->Example -> `ng g c shared/button --module=shared --style none`
+>Example -> `ng g c client/card --module=client --style none`
 * --skip-tests
 * --style none
+
+### Generate Component Standalone
+```sh
+    ng generate component shared/button --standalone  --skip-tests 
+```
