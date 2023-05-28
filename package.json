@@ -26,6 +26,8 @@
     "@angular/platform-server": "^16.0.0",
     "@angular/router": "^16.0.0",
     "@angular/service-worker": "^16.0.0",
+    "@ngrx/store": "^16.0.0",
+    "@ngrx/store-devtools": "^16.0.0",
     "@nguniversal/express-engine": "^16.0.2",
     "@storybook/angular": "^7.0.18",
     "express": "^4.15.2",

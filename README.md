@@ -12,7 +12,7 @@
 
 ### Generate Component -Module
 ```sh
-    ng g c [nameModule]/[nameComponent] --module=client 
+    ng g c [nameModule]/[nameComponent] --module=[nameModule]
 ```
 >Example -> `ng g c client/card --module=client --style none`
 * --skip-tests
