@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+
+import { HomeComponent } from './Views/home/home.component';
+import { ItemsViewsComponent } from './Views/items-views/items-views.component';
+
+import { PATHS_MODULE_CLIENT } from '@constants/routes';
 
 const routes: Routes = [
     {
-        path: '',
+        path: PATHS_MODULE_CLIENT.root,
         component: HomeComponent
+    },
+    {
+        path: PATHS_MODULE_CLIENT.items,
+        component: ItemsViewsComponent
     }
 ]
 

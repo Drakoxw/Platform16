@@ -12,9 +12,9 @@
 
 ### Generate Component -Module
 ```sh
-    ng g c [nameModule]/[nameComponent] --module=[nameModule]
+    ng g c [pathComponent]/[nameComponent] --module=[nameModule]
 ```
->Example -> `ng g c client/card --module=client --style none`
+>Example -> `ng g c modules/client/Views/ItemsViews --style none --skip-tests`
 * --skip-tests
 * --style none
 
@@ -31,5 +31,5 @@
 ```
 ### Run Docker 
 ```sh
-    docker run -d -it -p 80:80 platform-img
+    docker run --name platform-app -d -it -p 80:80 platform-img
 ```

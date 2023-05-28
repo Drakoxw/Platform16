@@ -7,6 +7,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ItemsEffects, ROOT_REDUCER } from './state';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,9 @@ import { AppComponent } from './app.component';
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    StoreModule.forRoot({}, {}),
-    StoreDevtoolsModule.instrument({ name: 'TEST', maxAge: 25, logOnly: !isDevMode() })
+    StoreModule.forRoot(ROOT_REDUCER),
+    StoreDevtoolsModule.instrument({ name: 'TEST', maxAge: 25, logOnly: !isDevMode() }),
+    EffectsModule.forRoot([ItemsEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

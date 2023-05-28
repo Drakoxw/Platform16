@@ -3,3 +3,8 @@ export interface ItemsModel {
     img: string,
     price: number
 }
+
+export interface InitialStateItems {
+    loading: boolean,
+    itemsList: ReadonlyArray<ItemsModel>
+}

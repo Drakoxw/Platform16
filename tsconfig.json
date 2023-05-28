@@ -29,6 +29,7 @@
       "@state/*": ["src/app/state/*"],
       "@constants/*": ["src/app/core/constants/*"],
       "@interfaces/*": ["src/app/core/interfaces/*"],
+      "@mocks/*": ["src/app/core/mocks/*"],
       "@moduleClient/*": ["src/app/modules/client/*"],
       "@moduleUser/*": ["src/app/modules/user/*"],
     }
