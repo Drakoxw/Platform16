@@ -8,7 +8,7 @@ RUN npm install -g npm@9.6.7
 
 COPY package.json /app
 
-RUN npm install --force
+RUN npm install
 
 COPY . /app
 
