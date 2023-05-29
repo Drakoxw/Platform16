@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemsEffects, ROOT_REDUCER } from './state';
 import { EffectsModule } from '@ngrx/effects';
+import { NavBarComponent } from '@shared/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EffectsModule } from '@ngrx/effects';
     }),
     StoreModule.forRoot(ROOT_REDUCER),
     StoreDevtoolsModule.instrument({ name: 'TEST', maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([ItemsEffects])
+    EffectsModule.forRoot([ItemsEffects]),
+    NavBarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

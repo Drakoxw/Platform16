@@ -1,16 +1,16 @@
-import { RoutesClient } from "@interfaces/models"
+import { RoutesClient } from '@interfaces/models';
 
 export const MODULES = {
-    CLIENT: '',
-    USER: 'user'
-}
+  CLIENT: '',
+  USER: 'user',
+};
 
 export const PATHS_MODULE_CLIENT: RoutesClient = {
-    root: '',
-    items: 'items',
-}
+  root: '',
+  items: 'items',
+};
 
 export const PATHS_FULL_CLIENT: RoutesClient = {
-    root: '',
-    items: `${MODULES.USER}/${PATHS_MODULE_CLIENT.items}`,
-}
+  root: '',
+  items: `${MODULES.CLIENT}/${PATHS_MODULE_CLIENT.items}`,
+};
