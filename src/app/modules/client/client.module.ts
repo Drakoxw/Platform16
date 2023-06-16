@@ -4,14 +4,16 @@ import { SubRoutingModule } from './sub-routing.module'
 
 import { HomeComponent } from './Views/home/home.component'
 import { ButtonComponent } from '@shared/button/button.component'
-import { ItemsViewsComponent } from './Views/items-views/items-views.component'
-import { CardItemComponent } from './Components/card-item/card-item.component'
+import { CardItemComponent } from './Components/card-item/card-item.component';
+import { ContactUsComponent } from './Views/contact-us/contact-us.component';
+import { AboutUsComponent } from './Views/about-us/about-us.component'
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ItemsViewsComponent,
-    CardItemComponent
+    CardItemComponent,
+    ContactUsComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule,

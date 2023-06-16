@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './Views/home/home.component';
-import { ItemsViewsComponent } from './Views/items-views/items-views.component';
 
 import { PATHS_MODULE_CLIENT } from '@constants/routes';
+import { AboutUsComponent } from './Views/about-us/about-us.component';
+import { ContactUsComponent } from './Views/contact-us/contact-us.component';
 
 const routes: Routes = [
   {
@@ -12,12 +13,16 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: PATHS_MODULE_CLIENT.home,
+    component: HomeComponent,
+  },
+  {
     path: PATHS_MODULE_CLIENT.aboutUs,
-    component: ItemsViewsComponent,
+    component: AboutUsComponent,
   },
   {
     path: PATHS_MODULE_CLIENT.contactUs,
-    component: ItemsViewsComponent,
+    component: ContactUsComponent,
   },
 ];
 

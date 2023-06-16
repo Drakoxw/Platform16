@@ -1,14 +1,13 @@
 <nav
-  class="border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-700 h-[72px] font-[montserrat]"
+  class="border-gray-200 bg-white h-[92px] font-[montserrat]"
 >
   <div
-    class="w-full flex flex-wrap items-center justify-between mx-auto p-4 relative bg-gray-100"
-    style="box-shadow: -1px -3px 5px 3px black"
+    class="w-full flex flex-wrap items-center text-base justify-between mx-auto py-4 px-20 relative border-b border-gray-200"
   >
     <a routerLink="/" class="flex">
-      <img
+      <img width="240" height="61"
         src="../../../assets/img/CIFRADO-LOGO-FULL-240x61.png"
-        class="h-8 mr-3"
+        class="ml-12"
         alt="CIFRADO-LOGO-FULL"
       />
     </a>
@@ -16,17 +15,17 @@
     <nav class="dark:bg-gray-700 hidden sm:!block">
       <div class="max-w-screen-xl px-4 py-3 mx-auto">
         <div class="flex items-center">
-          <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+          <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 ">
 
             <li class="">
               <a
-                [routerLink]="routes.root"
+              [routerLink]="routes.home"
                 routerLinkActive
-                #rla_i="routerLinkActive"
+                #rla_in="routerLinkActive"
                 [class]="
-                  rla_i.isActive
+                  rla_in.isActive
                     ? 'text-[#00a787]'
-                    : 'text-gray-900 dark:text-white hover:underline'
+                    : 'text-gray-900 dark:text-white hover:text-[#00a787]'
                 "
               >
                 Inicio
@@ -41,7 +40,7 @@
                 [class]="
                   rla_q.isActive
                     ? 'text-[#00a787]'
-                    : 'text-gray-900 dark:text-white hover:underline'
+                    : 'text-gray-900 dark:text-white hover:text-[#00a787]'
                 "
               >
                 Quiénes somos
@@ -56,14 +55,14 @@
                 [class]="
                   rla_c.isActive
                     ? 'text-[#00a787]'
-                    : 'text-gray-900 dark:text-white hover:underline'
+                    : 'text-gray-900 dark:text-white hover:text-[#00a787]'
                 "
               >
                 Contáctanos
               </a>
             </li>
           </ul>
-          <ul class="flex gap-4">
+          <ul class="flex gap-3">
             <li>
               <a
                 href="https://wa.me/573044898454"
@@ -107,7 +106,7 @@
               </a>
             </li>
           </ul>
-          <span class="font-medium mt-0 mr-6 space-x-8 text-sm text-[#00a787]"
+          <span class="font-medium ml-8 mt-0 mr-6 space-x-8  text-[#00a787]"
             ><a href="mailto:contacto@cifrado.com.co"
               >contacto@cifrado.com.co</a
             ></span
@@ -121,7 +120,7 @@
         (click)="ToogleMenu()"
         data-collapse-toggle="navbar-hamburger"
         type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 ml-3  text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-hamburger"
         aria-expanded="false"
       >
