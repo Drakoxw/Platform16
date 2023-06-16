@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Platform16": {
+    "cifrado": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Platform16/browser",
+            "outputPath": "dist/cifrado/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Platform16:build:production"
+              "browserTarget": "cifrado:build:production"
             },
             "development": {
-              "browserTarget": "Platform16:build:development"
+              "browserTarget": "cifrado:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Platform16:build"
+            "browserTarget": "cifrado:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "Platform16:build",
+            "browserTarget": "cifrado:build",
             "compodoc": true,
             "compodocArgs": [
               "-e",
@@ -121,7 +121,7 @@
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "Platform16:build",
+            "browserTarget": "cifrado:build",
             "compodoc": true,
             "compodocArgs": [
               "-e",
@@ -135,7 +135,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/Platform16/server",
+            "outputPath": "dist/cifrado/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -163,12 +163,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "Platform16:build:development",
-              "serverTarget": "Platform16:server:development"
+              "browserTarget": "cifrado:build:development",
+              "serverTarget": "cifrado:server:development"
             },
             "production": {
-              "browserTarget": "Platform16:build:production",
-              "serverTarget": "Platform16:server:production"
+              "browserTarget": "cifrado:build:production",
+              "serverTarget": "cifrado:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -182,12 +182,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "Platform16:build:production",
-              "serverTarget": "Platform16:server:production"
+              "browserTarget": "cifrado:build:production",
+              "serverTarget": "cifrado:server:production"
             },
             "development": {
-              "browserTarget": "Platform16:build:development",
-              "serverTarget": "Platform16:server:development"
+              "browserTarget": "cifrado:build:development",
+              "serverTarget": "cifrado:server:development"
             }
           },
           "defaultConfiguration": "production"

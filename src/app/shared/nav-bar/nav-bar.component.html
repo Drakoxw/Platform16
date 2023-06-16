@@ -1,5 +1,5 @@
 <nav
-  class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 h-[72px]"
+  class="border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-700 h-[72px] font-[montserrat]"
 >
   <div
     class="w-full flex flex-wrap items-center justify-between mx-auto p-4 relative bg-gray-100"
@@ -7,35 +7,111 @@
   >
     <a routerLink="/" class="flex">
       <img
-        src="../../../assets/img/drako-logo.jpg"
+        src="../../../assets/img/CIFRADO-LOGO-FULL-240x61.png"
         class="h-8 mr-3"
-        alt="Drako Logo"
+        alt="CIFRADO-LOGO-FULL"
       />
-      <span
-        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-        >Drako App</span
-      >
     </a>
 
     <nav class="dark:bg-gray-700 hidden sm:!block">
       <div class="max-w-screen-xl px-4 py-3 mx-auto">
         <div class="flex items-center">
           <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
-            <li>
+
+            <li class="">
               <a
-                [routerLink]="routes.items"
+                [routerLink]="routes.root"
                 routerLinkActive
-                #rla_m="routerLinkActive"
+                #rla_i="routerLinkActive"
                 [class]="
-                  rla_m.isActive
-                    ? 'text-blue-700'
+                  rla_i.isActive
+                    ? 'text-[#00a787]'
                     : 'text-gray-900 dark:text-white hover:underline'
                 "
               >
-                Items
+                Inicio
+              </a>
+            </li>
+            
+            <li class="">
+              <a
+                [routerLink]="routes.aboutUs"
+                routerLinkActive
+                #rla_q="routerLinkActive"
+                [class]="
+                  rla_q.isActive
+                    ? 'text-[#00a787]'
+                    : 'text-gray-900 dark:text-white hover:underline'
+                "
+              >
+                Quiénes somos
+              </a>
+            </li>
+
+            <li>
+              <a
+                [routerLink]="routes.contactUs"
+                routerLinkActive
+                #rla_c="routerLinkActive"
+                [class]="
+                  rla_c.isActive
+                    ? 'text-[#00a787]'
+                    : 'text-gray-900 dark:text-white hover:underline'
+                "
+              >
+                Contáctanos
               </a>
             </li>
           </ul>
+          <ul class="flex gap-4">
+            <li>
+              <a
+                href="https://wa.me/573044898454"
+                target="_blank"
+                rel="noopener nofollow"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="../../../assets/svgs/facebook.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/cifradosas/"
+                target="_blank"
+                rel="noopener nofollow"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="../../../assets/svgs/instagram.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/573044898454"
+                target="_blank"
+                rel="noopener nofollow"
+              >
+                <img
+                  width="20"
+                  height="20"
+                  src="../../../assets/svgs/whatsapp.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <span class="font-medium mt-0 mr-6 space-x-8 text-sm text-[#00a787]"
+            ><a href="mailto:contacto@cifrado.com.co"
+              >contacto@cifrado.com.co</a
+            ></span
+          >
         </div>
       </div>
     </nav>
@@ -80,12 +156,12 @@
     >
       <li>
         <a
-          [routerLink]="routes.items"
+          [routerLink]="routes.aboutUs"
           routerLinkActive
           #rla="routerLinkActive"
           [class]="rla.isActive ? routeActiveClass : routeNoactiveClass"
         >
-          Items
+          Quiénes somos
         </a>
       </li>
     </ul>

@@ -18,5 +18,5 @@ RUN npm run build:ssr --prod
 
 FROM nginx:1.23.4-alpine
 
-COPY --from=build-step /app/dist/Platform16/server /usr/share/nginx/html
-COPY --from=build-step /app/dist/Platform16/browser /usr/share/nginx/html
+COPY --from=build-step /app/dist/cifrado/server /usr/share/nginx/html
+COPY --from=build-step /app/dist/cifrado/browser /usr/share/nginx/html

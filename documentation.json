@@ -31,7 +31,7 @@
             "propertiesClass": [
                 {
                     "name": "title",
-                    "defaultValue": "'Platform16'",
+                    "defaultValue": "'cifrado'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
@@ -50,7 +50,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'Platform16';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'cifrado';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {

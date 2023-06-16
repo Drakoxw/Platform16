@@ -1,8 +1,8 @@
-# Platform16
+# cifrado
 
 ### Run your Storybook
 ```sh
-    ng run Platform16:storybook
+    ng run cifrado:storybook
 ```
 
 ### Generate Module

@@ -1,7 +1,7 @@
-export interface RoutesUser {
-}
+export interface RoutesUser {}
 
 export interface RoutesClient {
-    root: ''
-    items: string
+  root: '';
+  aboutUs: string;
+  contactUs: string;
 }
