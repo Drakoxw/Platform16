@@ -1,0 +1,19 @@
+<article *ngIf="articule" class="w-[265px] p-[10px] font-montserrat">
+  <picture class="w-[245px] h-[164px]">
+    <img
+      width="254"
+      height="164"
+      loading="lazy"
+      [src]="articule.imagen"
+      alt="imagen de articulos"
+    />
+  </picture>
+  <h2
+    class="text-[1.73rem] text-center font-bold text-[#00A887] leading-[1.29]"
+  >
+    {{ articule.titulo }}
+  </h2>
+  <p class="font-[15px] text-center leading-tight mt-3">
+    {{ articule.descripcion }}
+  </p>
+</article>

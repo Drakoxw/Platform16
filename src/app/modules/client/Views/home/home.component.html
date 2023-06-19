@@ -1,4 +1,17 @@
-<p>home works!</p>
+<section class="p-1 w-full">
+  <app-carrusel class="w-full overflow-hidden" />
 
-<app-button >Click me!</app-button>
+  <app-divider />
+
+  <app-banner1 />
+
+  <app-divider />
+
+  <section class="flex gap-4 flex-wrap items-start justify-center mb-6">
+    <app-card *ngFor="let item of articules" [articule]="item" />
+  </section>
+
+</section>
+
+<app-footer-home />
 

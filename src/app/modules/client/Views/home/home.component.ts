@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Articules } from '@interfaces/models';
+import { ListArticules } from '@mocks/index';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  articules:Articules[] = ListArticules
 
 }

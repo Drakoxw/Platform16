@@ -1,0 +1,53 @@
+
+<div class="navigation-wrapper relative flex justify-center items-center">
+  <div class="keen-slider keen-slider--vertical" #sliderRef>
+    <div class="keen-slider__slide number-slide1 w-full">
+      <img width="100%" src="../../../../../assets/img/banner-home/cableadobanner.jpg" alt="Cableado banner">
+    </div>
+    <div class="keen-slider__slide number-slide2 w-full">
+      <img width="100%" src="../../../../../assets/img/banner-home/cctvbanner.jpg" alt="CCTV banner">
+    </div>
+    <div class="keen-slider__slide number-slide3 w-full">
+      <img width="100%" src="../../../../../assets/img/banner-home/mantbanner.jpg" alt="Mantenimiento banner">
+    </div>
+    <div class="keen-slider__slide number-slide4 w-full">
+      <img width="100%" src="../../../../../assets/img/banner-home/ptpbanner.jpg" alt="ptp banner">
+    </div>
+
+    <div class="absolute w-full h-full flex justify-between items-center px-4">
+      <svg width="25" height="25" fill="#eeeeeee6"
+        [ngClass]="
+          'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
+        "
+        (click)="prev()"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+        />
+      </svg>
+      <svg *ngIf="slider" width="25" height="25" fill="#eeeeeee6"
+        [ngClass]="'' + (slider.track.details.slides.length - 1 === currentSlide
+          ? 'arrow--disabled'
+          : '')
+        "
+        (click)="next()"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      </svg>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="w-full flex justify-center items-center gap-6 mt-3">
+  <button
+    (click)="slider?.moveToIdx(i)"
+    *ngFor="let slide of dotHelper; let i = index"
+    [class]="'bg-gray-300 h-3 w-3 rounded-full text-gray-300' + (i === currentSlide ? 'active' : '')"
+  ></button>
+</div>

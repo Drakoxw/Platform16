@@ -1,25 +1,24 @@
-<nav
-  class="border-gray-200 bg-white h-[92px] font-[montserrat]"
->
+<nav class="border-gray-200 bg-white min-h-[92px] font-[montserrat]">
   <div
-    class="w-full flex flex-wrap items-center text-base justify-between mx-auto py-4 px-20 relative border-b border-gray-200"
+    class="w-full flex md:flex-wrap items-center text-base justify-between mx-auto py-4 md:px-20 relative border-b border-gray-200"
   >
     <a routerLink="/" class="flex">
-      <img width="240" height="61"
+      <img
+        width="240"
+        height="61"
         src="../../../assets/img/CIFRADO-LOGO-FULL-240x61.png"
         class="ml-12"
         alt="CIFRADO-LOGO-FULL"
       />
     </a>
 
-    <nav class="dark:bg-gray-700 hidden sm:!block">
+    <nav class="dark:bg-gray-700 hidden md:!block">
       <div class="max-w-screen-xl px-4 py-3 mx-auto">
         <div class="flex items-center">
-          <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 ">
-
+          <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8">
             <li class="">
               <a
-              [routerLink]="routes.home"
+                [routerLink]="routes.home"
                 routerLinkActive
                 #rla_in="routerLinkActive"
                 [class]="
@@ -31,7 +30,7 @@
                 Inicio
               </a>
             </li>
-            
+
             <li class="">
               <a
                 [routerLink]="routes.aboutUs"
@@ -106,7 +105,7 @@
               </a>
             </li>
           </ul>
-          <span class="font-medium ml-8 mt-0 mr-6 space-x-8  text-[#00a787]"
+          <span class="font-medium ml-8 mt-0 mr-6 space-x-8 text-[#00a787]"
             ><a href="mailto:contacto@cifrado.com.co"
               >contacto@cifrado.com.co</a
             ></span
@@ -115,12 +114,12 @@
       </div>
     </nav>
 
-    <div class="sm:hidden">
+    <div class="md:hidden mr-12">
       <button
         (click)="ToogleMenu()"
         data-collapse-toggle="navbar-hamburger"
         type="button"
-        class="inline-flex items-center p-2 ml-3  text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 ml-3 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-hamburger"
         aria-expanded="false"
       >
@@ -145,7 +144,7 @@
 
 <div
   *ngIf="showMenu"
-  class="fixed w-auto p-3 right-4 rounded bg-gray-100"
+  class="fixed w-auto p-3 right-4 z-50 rounded bg-gray-100"
   style="box-shadow: 1px 3px 6px 0px grey"
 >
   <div class="absolut" id="navbar-hamburger">
@@ -153,14 +152,46 @@
       (click)="ToogleMenu()"
       class="flex flex-col gap-1 font-medium rounded-lg w-max"
     >
+      <li class="">
+        <a
+          [routerLink]="routes.home"
+          routerLinkActive
+          #rla_in="routerLinkActive"
+          [class]="
+            rla_in.isActive
+              ? 'text-[#00a787]'
+              : 'text-gray-900 dark:text-white hover:text-[#00a787]'
+          "
+        >
+          Inicio
+        </a>
+      </li>
       <li>
         <a
           [routerLink]="routes.aboutUs"
           routerLinkActive
           #rla="routerLinkActive"
-          [class]="rla.isActive ? routeActiveClass : routeNoactiveClass"
+          [class]="
+            rla.isActive
+              ? 'text-[#00a787]'
+              : 'text-gray-900 dark:text-white hover:text-[#00a787]'
+          "
         >
           Quiénes somos
+        </a>
+      </li>
+      <li>
+        <a
+          [routerLink]="routes.contactUs"
+          routerLinkActive
+          #rla_c="routerLinkActive"
+          [class]="
+            rla_c.isActive
+              ? 'text-[#00a787]'
+              : 'text-gray-900 dark:text-white hover:text-[#00a787]'
+          "
+        >
+          Contáctanos
         </a>
       </li>
     </ul>
