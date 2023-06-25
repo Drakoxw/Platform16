@@ -8,7 +8,6 @@ import { ListArticules } from '@mocks/index';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
   articules:Articules[] = ListArticules
-
+  widthPx = Math.floor((ListArticules.length / 2) * 278)
 }

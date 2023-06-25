@@ -119,7 +119,7 @@
         (click)="ToogleMenu()"
         data-collapse-toggle="navbar-hamburger"
         type="button"
-        class="inline-flex items-center p-2 ml-3 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 -mr-4 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-hamburger"
         aria-expanded="false"
       >
@@ -144,13 +144,13 @@
 
 <div
   *ngIf="showMenu"
-  class="fixed w-auto p-3 right-4 z-50 rounded bg-gray-100"
+  class="fixed w-full p-3 z-50 rounded bg-white h-auto"
   style="box-shadow: 1px 3px 6px 0px grey"
 >
   <div class="absolut" id="navbar-hamburger">
     <ul
       (click)="ToogleMenu()"
-      class="flex flex-col gap-1 font-medium rounded-lg w-max"
+      class="flex flex-col gap-1 text-2xl font-medium rounded-lg w-max"
     >
       <li class="">
         <a

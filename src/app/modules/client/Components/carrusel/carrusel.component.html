@@ -1,17 +1,21 @@
 
 <div class="navigation-wrapper relative flex justify-center items-center">
-  <div class="keen-slider keen-slider--vertical" #sliderRef>
+  <div class="keen-slider keen-slider--vertical font-montserrat max-h-[70vh]" #sliderRef>
     <div class="keen-slider__slide number-slide1 w-full">
-      <img width="100%" src="../../../../../assets/img/banner-home/cableadobanner.jpg" alt="Cableado banner">
+      <img width="100%" [class]="animateZoom" src="../../../../../assets/img/banner-home/cableadobanner.jpg" alt="Cableado banner">
+      <h3 [class]="classAnimate">DISEÑO, INSTALACIÓN Y MANTENIMIENTO DE CABLEADO ESTRUCTURADO Y DATA CENTER</h3>
     </div>
     <div class="keen-slider__slide number-slide2 w-full">
-      <img width="100%" src="../../../../../assets/img/banner-home/cctvbanner.jpg" alt="CCTV banner">
+      <img width="100%" [class]="animateMinimize" height="100%" src="../../../../../assets/img/banner-home/cctvbanner.jpg" alt="CCTV banner">
+      <h3 [class]="classAnimate">SISTEMAS DE CÁMARAS DE SEGURIDAD, ALARMAS & SENSORES</h3>
     </div>
     <div class="keen-slider__slide number-slide3 w-full">
-      <img width="100%" src="../../../../../assets/img/banner-home/mantbanner.jpg" alt="Mantenimiento banner">
+      <img width="100%" [class]="animateZoom" src="../../../../../assets/img/banner-home/mantbanner.jpg" alt="Mantenimiento banner">
+      <h3 [class]="classAnimate">SOPORTE & MANTENIMIENTO - PÓLIZAS</h3>
     </div>
     <div class="keen-slider__slide number-slide4 w-full">
-      <img width="100%" src="../../../../../assets/img/banner-home/ptpbanner.jpg" alt="ptp banner">
+      <img width="100%" [class]="animateMinimize" src="../../../../../assets/img/banner-home/ptpbanner.jpg" alt="ptp banner">
+      <h3 [class]="classAnimate">ENLACES INALÁMBRICOS PUNTO A PUNTO Y PtMP - RADIO ENLACE</h3>
     </div>
 
     <div class="absolute w-full h-full flex justify-between items-center px-4">

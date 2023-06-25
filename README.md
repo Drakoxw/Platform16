@@ -27,9 +27,10 @@
 
 ### Generate Docker image
 ```sh
-    docker build -t platform-img .
+    docker build -t cifrado-img .
 ```
 ### Run Docker 
 ```sh
-    docker run --name platform-app -d -it -p 80:80 platform-img
+    docker run --name cifrado-app -d -it -p 80:80 cifrado-img
 ```
+// 8237c544678c0952298b57e79b9040c16238NRAL

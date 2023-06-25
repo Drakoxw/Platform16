@@ -1,0 +1,51 @@
+.animate {
+  width: 100%;
+  animation-name: animationUp;
+  animation-duration: 3s;
+  z-index: 1000;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  color: #FEFEFE;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.animate_zoom {
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-name: animationZoom;
+}
+
+.animate_minimize {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: animationMinimize;
+}
+
+h3{
+  font-size: 4vw;
+}
+
+@keyframes animationUp {
+  from {bottom: -4rem;}
+  to {bottom: 1rem;}
+}
+
+@keyframes animationZoom {
+  from {transform: scale(1);}
+  to {transform: scale(1.1);}
+}
+
+@keyframes animationMinimize {
+  from {transform: scale(1.1);}
+  to {transform: scale(1);}
+}
+
+@media (min-width: 950px) {
+  h3{
+    font-size: 3vw;
+  }
+}
+
+
