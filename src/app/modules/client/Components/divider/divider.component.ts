@@ -10,7 +10,7 @@ export class DividerComponent {
 
   ngOnInit() {
     if (typeof window !== 'undefined') {
-      this.getScreenWidth = window.innerWidth;
+      this.getScreenWidth = window?.innerWidth ?? 300;
       this.blocks = Array(Math.floor(this.getScreenWidth / 20) - 1 ).fill(0);
     }
   }
@@ -18,7 +18,7 @@ export class DividerComponent {
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     if (typeof window !== 'undefined') {
-      this.getScreenWidth = window.innerWidth;
+      this.getScreenWidth = window?.innerWidth ?? 300 ;
       this.blocks = Array(Math.floor(this.getScreenWidth / 20) - 1).fill(0);
     }
   }
