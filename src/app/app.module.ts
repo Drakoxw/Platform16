@@ -1,5 +1,6 @@
 import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {provideClientHydration} from '@angular/platform-browser';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { StoreModule } from '@ngrx/store';
@@ -27,7 +28,7 @@ import { NavBarComponent } from '@shared/nav-bar/nav-bar.component';
     EffectsModule.forRoot([ItemsEffects]),
     NavBarComponent
   ],
-  providers: [],
+  providers: [provideClientHydration()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

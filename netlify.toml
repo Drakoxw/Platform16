@@ -1,4 +1,8 @@
 [build]
-  command = "npm run prerender"
+  command = "npm run build:ssr"
   functions = "./functions"
-  publish = "dist/angular-universal-pre-render/browser"
+  publish = "dist/cifrado/server"
+[[redirects]]
+  from = "/*"
+  to = "/main.js"
+  status = 200
